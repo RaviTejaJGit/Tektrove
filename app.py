@@ -11,7 +11,7 @@ import time
 
 # Define valid username-password pairs
 VALID_USERNAME_PASSWORD_PAIRS = {
-    'Jerry': 'tedi'
+    'admin': 'admin123'
 }
 
 # Create the Dash app
