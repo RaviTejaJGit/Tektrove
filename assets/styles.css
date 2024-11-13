@@ -1,1 +1,282 @@
+.tektronix-logo-left {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    max-width: 15vw; /* Adjust size */
+    height: auto;
+}
 
+.tektronix-logomain {
+    width: 100%; /* Full width of the parent container */
+    max-width: 15vw; /* Maximum width for the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+    display: block; /* Ensures block-level centering */
+    object-fit: contain;
+}
+
+.tektronix-logoresult {
+    width:100%;
+    max-width: 5vw; /* 20% of the viewport width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain;
+}
+
+.textareamain {
+    width: 70vw; /* Width set to the same value as the button */
+    height: 16vh;
+    font-size: 1.2vw;
+    padding: 1vw;
+    border-radius: 1vw;
+    border: 2px solid #5c94d0; /* Ensured the same border for consistency */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f0f0f0;
+    transition: box-shadow 0.3s ease;
+    margin-top: 2vh;
+    margin-bottom: 2vh; /* Space between textarea and button */
+    box-sizing: border-box; /* Include padding and border in width */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.buttonmain {
+    width: 70vw; /* Same width as textarea */
+    height: 6vh; /* Optional spacing */
+    margin-top: 0.1vh; /* Optional spacing */
+    padding: 0.5vw 1vw; /* Adjust padding for a responsive look */
+    font-size: 1vw; /* Adjust font size for responsiveness */
+    border-radius: 1vw;
+    background-color: #76b2dd; /* Blue background color */
+    color: rgb(255, 255, 255); /* White text color */
+    border: 2px solid #5c94d0; /* Same border style for consistency */
+    transition: background-color 0.3s ease, color 0.3s ease; 
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+.buttonmain:active {
+    background-color: #003f7f; /* Even darker blue when clicked */
+    transform: scale(0.95); /* Slightly shrink the button when clicked */
+}
+
+.container {
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Align items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    height: 100vh; /* Make the container take full viewport height */
+    margin-top: -60px;
+}
+
+.logo {
+    width: 3vw; /* Use viewport width to scale with window size */
+    height: 3vw; /* Maintain square dimensions */
+    margin-left: 2vw; /* Add space between the button and the icon */
+    margin-top: -0.5vh;
+}
+
+/* Responsive styles for the top section */
+.top-section {
+    position: relative; /* Change from absolute to relative */
+    top: 2vh; /* Keep some margin from the top */
+    left: 2vw; /* Keep some margin from the left */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 96vw; /* 100% of the viewport width */
+    margin-bottom: 4vh; /* Add space below the top section */
+}
+
+/* Adjust the logo size to be responsive */
+.tektronix-logo {
+    width: 15vw; /* Responsive logo size */
+    height: auto;
+    margin-right: 2vw; /* Add spacing based on the viewport */
+}
+
+/* Responsive styles for the search area */
+.search-area {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 87vw; /* 70% of the viewport width */
+}
+
+.textarea {
+    width: 95%; /* Adjust width to fit within the search area */
+    height: 7vh; /* Reduced height for the textarea */
+    resize: none; /* Disable resizing */
+    margin-left: 2vw;
+    padding: 0.5vw; /* Adjust padding for a better look */
+    font-size: 1vw; /* Responsive font size */
+    border-radius: 1vw;
+    background-color: #eeeff1;
+}
+
+/* Submit button styles */
+.button {
+    width: 8vw; /* Adjust button width to be responsive */
+    height: 8vh;
+    margin-left: 2vw; /* Add some spacing between elements */
+    margin-top: 0.1vh; /* Move the button up by 0.5vh */
+    padding: 0.5vw 1vw; /* Adjust padding for a responsive look */
+    font-size: 1vw; /* Adjust font size for responsiveness */
+    border-radius: 1vw;
+    background-color: #76b2dd; /* Blue background color */
+    color: rgb(255, 255, 255); /* White text color */
+    border: 2px solid #5c94d0; /* Darker blue border */
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.button:active {
+    background-color: #003f7f; /* Even darker blue when clicked */
+    transform: scale(0.95); /* Slightly shrink the button when clicked */
+}
+
+/* Bottom section styles */
+.bottom-section {
+    display: flex; /* Flexbox for side-by-side layout */
+    justify-content: space-between; /* Space between left and right sections */
+    width: 96vw; /* Match the width of the overall layout */
+    margin: 0 auto; /* Center the section */
+    height: 85vh; /* Height for the bottom section */
+    margin-top: 2vh; /* Add some margin from the top */
+}
+
+.response-text {
+    font-family: 'Courier New', Courier, monospace;
+    white-space: pre-wrap; /* Preserve line breaks */
+}
+
+/* Left section styles */
+.left-section {
+    width: 75%; /* Left section takes 48% of the bottom section */
+    padding: 1vw; /* Padding for aesthetics */
+    background-color: #e9ecef; /* Light background color */
+    border-radius: 1vw; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    font-size: 1vw;
+    overflow-y: auto; /* Allow scrolling if content overflows */
+}
+
+/* Right section styles */
+.right-section {
+    width: 20%; /* Right section takes 48% of the bottom section */
+    padding: 1vw; /* Padding for aesthetics */
+    margin-left: 0.4%;
+    background-color: #e9ecef; /* Light background color */
+    border-radius: 1vw; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow-y: auto; /* Allow scrolling if content overflows */
+}
+
+/* Loading component styles */
+.loading {
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    height: 100%; /* Full height of the container */
+}
+
+/*video file plays*/
+.video-file {
+    padding: 0.5rem;  /* Padding for aesthetics */
+    background-color: #f8f9fa;  /* Light background for each video file */
+    border-radius: 0.5rem;  /* Rounded corners */
+    margin-bottom: 0.5rem;  /* Space between items */
+    cursor: pointer;  /* Change cursor on hover */
+}
+
+
+.file-name-box {
+    display: inline-block;       
+    padding: 5px 10px;          
+    background-color: #86b7e9;  
+    border-radius: 3px;         
+    text-align: center;         
+    color: #333;                
+    font-size: 17px;            
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 8px;            
+    max-width: 100%;             /* Set a maximum width for responsiveness */
+    width: 94%;                /* Allow width to adjust based on content */
+    cursor: pointer;
+}
+
+.file-name-box:hover {
+    background-color: #5679ca;  /* Change background color on hover */
+}
+
+/* styles.css */
+
+/* Overall video layout at page3 */
+.video-layout {
+    display: flex;
+    flex-direction: column;  /* Stack children vertically */
+    height: 100vh;  /* Full height of the viewport */
+}
+
+/* Top section (30% of the height) */
+.video-header {
+    flex: 0 0 39%;  /* Fixed height of 40% */
+    background-color: #000000;  /* Light background color for the header */
+    padding: 1rem;  /* Padding for aesthetics */
+    border-bottom: 1px solid #ccc;  /* Bottom border for separation */
+    border-radius: 0.5rem;
+    margin-bottom: 5px;
+    overflow: hidden;  /* Hide any overflowing content */
+}
+
+.video-header video {
+    width: 35%;  /* Set width to 100% to fill the header */
+    height: auto;  /* Maintain aspect ratio */
+    max-height: 100%;  /* Ensure it does not exceed header height */
+    border-radius: 0.5rem;  /* Rounded corners */
+    margin: 0 auto;  /* Center the video */
+    display: block;  /* Ensure it behaves as a block element */
+}
+
+.video-header pre {
+    max-width: 70%; /* Constrain to header width */
+    max-height: 300px; /* Set a reasonable max height */
+    background-color: #222; /* Dark background for contrast */
+    color: #f1f1f1; /* Light font color for readability */
+    padding: 0.5rem;
+    overflow: auto; /* Allow vertical scrolling if content exceeds max height */
+    border-radius: 0.5rem; /* Match other elements' border radius */
+    margin: 0 auto;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+
+/* Bottom section (70% of the height) */
+.video-content {
+    flex: 1;  /* Take up the remaining space */
+    display: flex;  /* Flex to center content */
+    justify-content: center;  /* Center horizontally */
+    align-items: center;  /* Center vertically */
+    background-color: #f3eded;  /* Light background for the video content */
+    border-radius: 0.5rem;
+    overflow-y: auto;  /* Enable vertical scrolling */
+    padding: 20px;  /* Add some padding for content spacing */
+}
+
+
+/* Style for the video element */
+.video-content video {
+    width: 100%;  /* Responsive width */
+    height: auto;  /* Maintain aspect ratio */
+    border-radius: 0.5rem;  /* Rounded corners */
+    max-height: 100%;  /* Prevent overflow from the content section */
+}
+
+
+/* Default cursor */
+body {
+    cursor: default;
+}
+
+/* Change cursor to hourglass (wait) */
+.wait-cursor {
+    cursor: wait;
+}
