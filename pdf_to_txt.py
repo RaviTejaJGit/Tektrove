@@ -5,11 +5,11 @@ import openai
 import pandas as pd
 from pdfplumber.utils import extract_text, get_bbox_overlap, obj_to_bbox
 
-AZURE_OPENAI_VERSION = "2023-09-15-preview"
-AZURE_OPENAI_DEPLOYMENT = "gpt-4o-test"
-AZURE_OPENAI_ENDPOINT = "https://tek-internal-openai-service.openai.azure.com"
-api_version = "2023-09-15-preview"
-api_key = ""#put your key
+AZURE_OPENAI_VERSION = os.getenv("AZURE_OPENAI_VERSION", "2023-09-15-preview")
+AZURE_OPENAI_DEPLOYMENT = os.getenv("AZURE_OPENAI_DEPLOYMENT", "gpt-4o-test")
+AZURE_OPENAI_ENDPOINT = os.getenv("AZURE_OPENAI_ENDPOINT", "https://tek-internal-openai-service.openai.azure.com")
+api_version = os.getenv("API_VERSION", "2023-09-15-preview")
+api_key = os.getenv("API_KEY")
  
 
 
