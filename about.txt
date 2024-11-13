@@ -1,0 +1,31 @@
+This is Tektrove Lat update 
+24 OCT 23:22
+25 OCT 01:08 [Version 1 finished]
+Code is Very Neat Clean
+
+app.py             : Responsible for defining the structure of the HTML layout using Dash components.
+		     It serves as the entry point for the application, outlining the core user interface elements.
+
+callback.py        : Contains all the callback functions for interactive elements.
+		     This file manages dynamic updates, linking user inputs to outputs in the UI, and processes events triggered by the app.
+
+chromadex.py       : Handles interactions with the database and manages data encodings. 
+		     It ensures proper integration between the video data and the app’s functionality.
+
+turntranscripts.py : Contains the logic to convert video files (located in the assets/videos folder) into text transcripts. 
+		     These transcripts are then saved as .srt files in the srts folder for further use in the app.
+
+
+corpus.txt         : A plain text file that lists the names of all the video files in the database. 
+		     This is used to keep track of which videos are available for processing and display.
+
+requirements.txt   : Specifies the Python package dependencies required for the project. 
+		     Running pip install -r requirements.txt ensures all necessary packages are installed.
+
+
+.env               : Stores key-value pairs for environment-specific configurations, such as API keys, database URLs, or any other sensitive information. 
+		     These values are loaded into the application environment for secure and flexible configuration.
+
+
+assets/styles.css  : Contains the CSS styles that define the visual appearance of the application. 
+		     This includes layout, typography, color schemes, and other styling rules to enhance the UI's design and user experience.

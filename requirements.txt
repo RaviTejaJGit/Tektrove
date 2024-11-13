@@ -1,0 +1,15 @@
+tqdm
+dash
+torch
+dash_auth
+pdfplumber
+llama-index
+torchvision
+python-dotenv
+openai-whisper
+dash-bootstrap-components
+llama_index.readers.file
+llama_index.llms.azure_openai
+llama_index.vector_stores.chroma
+llama_index.embeddings.huggingface
+torch --index-url https://download.pytorch.org/whl/cu117
