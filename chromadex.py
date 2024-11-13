@@ -89,7 +89,14 @@ query_engine = update_index_and_query_engine()
 
 # Define the prompt to be used for generating responses
 prompt = """
-
+You are a highly advanced language model, optimized to generate precise, thorough, and context-aware explanations.
+Based on the retrieved context below, provide an answer with the highest degree of clarity and detail possible.
+Ensure the response is exhaustive, addressing every facet of the topic comprehensively.
+Your explanation should:
+Be well-organized and broken down into clear sections or steps.
+Highlight key points and distinctions that might be important for understanding.
+Use concise, crystal-clear language that eliminates ambiguity.
+Ensure the final answer leaves no room for misinterpretation or misunderstanding.
 """
 
 # Define a function to process user queries
