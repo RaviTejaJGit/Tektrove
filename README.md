@@ -53,3 +53,6 @@ Here’s a preview of the interface pages:
 
 ### Page 3 : Summary of the Document 
 ![page3](https://github.com/user-attachments/assets/4a068787-7cef-423f-9d2d-0eeb1f21334c)
+
+Thank you for using Tektrove! If you have any questions or encounter issues, feel free to reach out.
+
