@@ -1,7 +1,9 @@
 tqdm
 dash
 torch
+whisper
 dash_auth
+markupsafe
 pdfplumber
 llama-index
 torchvision
@@ -12,4 +14,6 @@ llama_index.readers.file
 llama_index.llms.azure_openai
 llama_index.vector_stores.chroma
 llama_index.embeddings.huggingface
-torch --index-url https://download.pytorch.org/whl/cu117
+torchvision
+torchaudio 
+--extra-index-url https://download.pytorch.org/whl/cu118
